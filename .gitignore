@@ -32,22 +32,18 @@ yarn-error.log*
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
 # dotenv environment variable files
-.env
 # Local replicas' copies (`.env.b`, …). Only the example is committed.
-.env.*
 dev-instances.json
 !.env.example
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 # Operator secrets `scripts/zk/deploy-testnet.ts --secrets-file` writes: the
 # auditor registry's admin and the fee account's keys. Never committed.
 .zk-secrets/
@@ -75,3 +71,4 @@ contracts/soroban/**/target/
 
 # Locally generated swap commission wallets (keys); never committed.
 .fee-wallets/
+config.bat
